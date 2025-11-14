@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formación</title>
+    <link rel="stylesheet" href="../static/paginaprincipal.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">Saberyer</div>  <!--Nombre de la plataforma--> 
+        <a href="#" class="nav-item active">
+            <div class="nav-icon"></div>
+            <h2>Cursos</h2>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon"></div>
+            <h2>Cursos largos</h2>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon"></div>
+            <h2>Datos interesantes</h2>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="nav-icon"></div>
+           <h2>Lecturas</h2> 
+        </a>
+        <a href="/mi_perfil" class="nav-item">
+            <div class="nav-icon">👤</div>
+            <h2>PERFIL</h2>
+        </a>
+    </div>
+
+    <div class="main-content">
+        <div class="lesson-area">
+            <div class="lesson-header">
+                <div class="lesson-info">
+                    <h2> Neoliberalismo en México</h2>
+                    <p>Aprende la historia del Neoliberalismo en México</p>
+                </div>
+                <button class="guide-btn">Complementos</button>
+            </div>
+
+            <div class="lesson-content">
+                 <div class="first-lesson-item active">⭐</div>
+                <div class="lesson-path">
+                    <div class="path-line"></div>
+                    <div class="lesson-items">
+                        <div class="lesson-item">📖</div>
+                        <div class="lesson-item">⭐</div>
+                        <div class="lesson-item">💻</div>
+                        <div class="lesson-item">⭐</div>
+                        <div class="lesson-item">👥</div>
+                        <div class="lesson-item">🏆</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <div class="stats-header">
+                <div class="stat-item">Es</div>
+            </div>
+            <div class="league-card">
+                <div class="card-title">
+                    ¡Dias completados!
+                </div>
+            </div>
+
+            <div class="challenges-card">
+                <div class="card-title">
+                    Desafíos del día
+                    <a href="#" class="view-all">VER TODOS</a>
+                </div>
+                <div class="challenge-item">
+                    <div class="challenge-icon">⚡</div>
+                    <div>
+                        <div class="challenge-text">Gana 10 EXP</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <small style="color: #777;">10 / 10</small>
+                    </div>
+                    <div style="background: #8b4513; color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px;">🏆</div>
+                </div>
+            </div>
+
+          <div class="profile-card">
+                {% if usuario %}
+                    <!-- Usuario logueado -->
+                    <div class="card-title1">
+                        ¡Bienvenido!
+                    </div>
+                    <div class="user-info">
+                        <div class="username"><h2>{{ usuario }}</h2></div>
+                    </div>
+                {% else %}
+                    <!-- Usuario no logueado -->
+                    <div class="card-title">
+                        ¡Inicia sesión para guardar tu progreso!
+                    </div>
+                    <a href="{{ url_for('login') }}">
+                        <button class="create-profile-btn">INICIAR SESIÓN</button>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>

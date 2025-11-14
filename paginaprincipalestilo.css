@@ -1,0 +1,453 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(255, 253, 249);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 2.8em;
+    margin-bottom: .20em;
+}
+h2{font-size: 2.0em;}
+h3{font-size: 1.0em;}
+p{
+    font-size:  1.0em;
+    line-height: 1.4;
+    margin-bottom: .20em;
+}
+#hero button{
+    font-family: "Times New Roman";
+    font-size: 1em;
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    background-color:transparent;
+    margin-top:20px;   
+}
+#hero button:hover{
+     background-color:rgb(87, 87, 87);
+}
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 4px solid black;
+    color: black;
+    background-color:transparent;
+}
+
+button:hover{
+     background-color:rgb(87, 87, 87);
+}
+
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(255, 253, 249);
+    margin: 0;
+    padding: 0;
+}
+
+header .logo{
+    font-family: "Didot";
+    color: rgb(167, 0, 44);
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header .iniciose{
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.iniciosesion{
+    order: 3;
+    z-index: 10;
+}
+
+header .container{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribución uniforme */
+    height: 65px;
+    box-sizing: border-box; 
+    position: relative;
+    --icon-toggle-menu: url(../Imagenes/1png.svg);
+}
+
+.nav_list{
+   position: static;
+    width: 100%;
+    height: 0;
+    max-height: 0;
+    background-color: rgb(255, 253, 249);
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    list-style: none;
+    transition: all 0.5s ease;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.nav_list li {
+    margin-bottom: 1.5rem;
+}
+
+header:has(.nav_input:checked) .nav_list {
+    height: auto;
+    max-height: 300px;
+    padding: 2rem 5%;
+}    
+
+header .container:has(.nav_input:checked){
+    --icon-toggle-menu:url(../Imagenes/x.svg);
+}
+
+.nav_figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    order: 2;
+    /* Removido el position absolute y centrado manual */
+}
+
+.nav_input{
+    display: none;
+}
+
+.nav_toggel{
+    width: 20px;
+    height: 20px;
+    background-image: var(--icon-toggle-menu);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 10;
+    order: 1;
+    display: block;
+    flex-shrink: 0;
+}
+
+.nav_input{
+    display: none;
+}
+
+.nav_link1{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav_link2{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav_link3{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 20px;
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    margin-top: -20px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", serif;
+}
+#hero .dossier{
+    font-size:  0.90em;
+    color: brown;
+    font-weight: bold;
+
+}
+#hero .textohero{
+    font-size: 1.10em;
+    color: black;
+    font-weight: bold;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+    linear-gradient(
+        0deg,
+        rgba(56, 56, 56, 0.199),
+        rgba(56, 56, 56, 0.199)
+    )
+    ,url(../Imagenes/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+#apartados .carta1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.carta1:first-child{
+    color: rgb(91, 0, 136);
+}
+.carta1:nth-child(2){
+    color: rgb(120, 0, 64);
+}
+.carta1:nth-child(3){
+    color: rgb(0, 121, 107)
+}
+.carta1:nth-child(4){
+    color:  rgb(91, 0, 136);
+}
+.carta1 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    position: relative;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.carta1 h2 {
+    text-align: left;
+    align-self: flex-start;
+    margin: 0 0 20px 0;
+    position: relative;
+    z-index: 2;
+    order: 1;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.carta1 p{
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+    z-index: 2;
+    order: 3;
+    font-size: 1.2em;
+    color: black;
+    margin-top: -20px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Reforma {
+    font-weight: bold;
+}
+
+.carta1:first-child .image-container {
+    width: 350px;
+    height: 350px;
+    background-image: url(../Imagenes/Prueba1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-top: -40px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+}
+.carta1:nth-child(2) .image-container {
+    width: 350px;
+    height: 350px;
+    background-image: url(../Imagenes/prueba2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-top: -50px;
+    margin-bottom: -25px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+}
+.carta1:nth-child(3) .image-container {
+    width: 350px;
+    height: 350px;
+    background-image: url(../Imagenes/prueba3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-top: -55px;
+    margin-bottom: -25px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+}
+.carta1:nth-child(4) .image-container {
+    width: 350px;
+    height: 350px;
+    background-image: url(../Imagenes/prueba4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+}
+.carta1 button {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    order: 4;
+}
+#ayudaparacomenzar .container1{
+    text-align: center;
+}
+#ayudaparacomenzar .container{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 80px;
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+    --icon-toggle-estudiante: url(../Imagenes/Estudiantes_Capa\ 1.svg);
+}
+
+.estudiante_list{
+    position: static;
+    height: 0;
+    max-height: 0;
+    background-color: rgb(161, 161, 255);
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    list-style: none;
+    transition: all 0.2s ease;
+    margin-top: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.estudiante_list li {
+    margin-bottom: 1.5rem;
+}
+
+#ayudaparacomenzar:has(.estudiante_input:checked) .estudiante_list {
+    height: auto;
+    max-height: 300px;
+    padding: 2rem 5%;
+}    
+
+#ayudaparacomenzar .container:has(.estudiante_input:checked){
+    --icon-toggle-estudiante: url(../Imagenes/Estudiantes_oscuro_Capa\ 1.svg);
+}
+
+.estudiante_figure, .estudiante_toggel{
+    z-index: 10;
+}
+
+.estudiante_input{
+    display: none;
+}
+
+.estudiante_toggel{
+    margin-top: 40px;
+    width: 140px;
+    height: 140px;
+    background-image: var(--icon-toggle-estudiante);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logoE {
+    margin: 0%;
+    padding: 8px 30px;
+}
+
+#contacto {
+    background-color: rgb(54, 61, 73);
+    margin-bottom: 0;
+    color: white;
+    padding: 20px;
+}
+#contacto .carta{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#contacto h2 {
+    font-size: 1.25em;
+    margin-bottom: 0.15em; 
+}
+
+#contacto p {
+    font-size: 1.0em;
+    margin-bottom: 0.15em; 
+}
+
+@media (min-width: 720px){
+    header .container{
+        flex-direction: row;
+    }
+}

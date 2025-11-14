@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartografía Social MX</title>
+    <link rel="stylesheet" href="../paginaprincipalestilo.css">
+</head>
+<body>
+    <header>
+        
+         <div class="container">
+
+                <figure class="nav_figure">
+                <a class="logo"> Revista FOSFORO </a>
+                </figure>
+
+                <label class="nav_toggel">
+                    <input type="checkbox" id="menu-input" class= "nav_input">
+                </label>
+                <div class="iniciosesion">
+                  <a href="{{ url_for('login') }}">
+                <img src= "../Imagenes/iniciosesion.svg" alt="Descripción de la imagen" width="130" class="iniciose">
+               </a>
+                </div>  
+        </div>
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="#" class="nav_link1">Sobre nosotros</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link2">Revistas</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#"class="nav_link3">Articulos</a>
+                </li>
+            </ul>
+    </header>
+    <section id="hero">
+        <p> <span class="dossier"> DOSSIER</span><br><span class="textohero">PRIMER NUMERO DE LA REVISTA FOSFORO</span></p>
+        <button>Ver más</button>
+    </section>
+    <section id="apartados">
+        <div class="container">
+            <div class="carta1">
+                <div class="container">
+                 <div class="image-container"></div>
+                    <h2>Conyuturas</h2>
+                    <p><span class="Reforma">La Reforma Electoral</span> <br><br> Texto de prueba para la sección de conyunturas, 
+                        texto largo,para apreciar <br> como se ve</p>
+                </div>
+            </div>
+            <div class="carta1">
+                <div class="container">
+                 <div class="image-container"></div>
+                    <h2>Tema central</h2>
+                    <p><span class="Reforma">La Reforma Electoral</span> <br><br> Texto de prueba para la sección de conyunturas, 
+                        texto largo,para apreciar <br> como se ve</p>
+                </div>
+            </div>
+            <div class="carta1">
+                <div class="container">
+                    <div class="image-container"></div>
+                    <h2>Articulos destacados </h2>
+                    <p><span class="Reforma">La Reforma Electoral</span> <br><br> Texto de prueba para la sección de conyunturas, 
+                        texto largo,para apreciar <br> como se ve</p>
+                </div>
+            </div>
+            <div class="carta1">
+                <div class="container">
+                 <div class="image-container"></div>
+                    <h2>Numeros anteriores</h2>
+                    <p>Energias renovables</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ayudaparacomenzar">
+        <div class="container1">
+            <h2>¿No sabes por donde comenzar?</h2>
+            <h3>Utiliza las busquedas recomendadas por perfil</h3>
+        </div>    
+        <div class="container">
+                <label class="estudiante_toggel">
+                    <input type="checkbox" id="info-estudiante" class= "estudiante_input">
+                </label>
+        </div>
+            <ul class="estudiante_list">
+                <li class="estudiante_item">
+                    <h3>Sin información...</h3>
+                </li>
+            </ul>
+    </section>
+    <section id="contacto">
+       <div class="carta">
+            <div class="container">
+                <h2>Sitios de interés</h2>
+                <p>Pagina ficticia.mx</p>
+            </div>
+        </div>
+        <div class="carta">
+            <div class="container-redes-sociales">
+
+            </div>
+        </div>
+        <div class="carta">
+            <p>&copy;Revista Fosforo</p>
+        </div>
+    </section>
+</body>
+</html>
