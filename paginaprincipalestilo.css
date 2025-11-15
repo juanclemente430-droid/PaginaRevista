@@ -123,6 +123,30 @@ header .container{
 .nav_list li {
     margin-bottom: 1.5rem;
 }
+/* Estilos para redes sociales en el menú */
+.redes-sociales-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.social-link {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: rgb(167, 0, 44);
+}
+
+.social-link i {
+    display: block;
+}
 
 header:has(.nav_input:checked) .nav_list {
     height: auto;
