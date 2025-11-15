@@ -99,7 +99,7 @@ header .container{
     height: 65px;
     box-sizing: border-box; 
     position: relative;
-    --icon-toggle-menu: url(../Imagenes/1png.svg);
+    --icon-toggle-menu: url(Imagenes/1png.svg);
 }
 
 .nav_list{
@@ -131,7 +131,7 @@ header:has(.nav_input:checked) .nav_list {
 }    
 
 header .container:has(.nav_input:checked){
-    --icon-toggle-menu:url(../Imagenes/x.svg);
+    --icon-toggle-menu:url(Imagenes/x.svg);
 }
 
 .nav_figure {
@@ -224,7 +224,7 @@ header .container:has(.nav_input:checked){
         rgba(56, 56, 56, 0.199),
         rgba(56, 56, 56, 0.199)
     )
-    ,url(../Imagenes/Hero.png);
+    ,url(Imagenes/Hero.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -289,7 +289,7 @@ header .container:has(.nav_input:checked){
 .carta1:first-child .image-container {
     width: 350px;
     height: 350px;
-    background-image: url(../Imagenes/Prueba1.jpeg);
+    background-image: url(Imagenes/Prueba1.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -303,7 +303,7 @@ header .container:has(.nav_input:checked){
 .carta1:nth-child(2) .image-container {
     width: 350px;
     height: 350px;
-    background-image: url(../Imagenes/prueba2.jpeg);
+    background-image: url(Imagenes/prueba2.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -318,7 +318,7 @@ header .container:has(.nav_input:checked){
 .carta1:nth-child(3) .image-container {
     width: 350px;
     height: 350px;
-    background-image: url(../Imagenes/prueba3.png);
+    background-image: url(Imagenes/prueba3.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -333,7 +333,7 @@ header .container:has(.nav_input:checked){
 .carta1:nth-child(4) .image-container {
     width: 350px;
     height: 350px;
-    background-image: url(../Imagenes/prueba4.jpeg);
+    background-image: url(Imagenes/prueba4.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -365,7 +365,7 @@ header .container:has(.nav_input:checked){
     height: 80px;
     box-sizing: border-box; 
     margin-bottom: 20px;
-    --icon-toggle-estudiante: url(../Imagenes/Estudiantes_Capa\ 1.svg);
+    --icon-toggle-estudiante: url(Imagenes/Estudiantes_Capa\ 1.svg);
 }
 
 .estudiante_list{
@@ -398,7 +398,7 @@ header .container:has(.nav_input:checked){
 }    
 
 #ayudaparacomenzar .container:has(.estudiante_input:checked){
-    --icon-toggle-estudiante: url(../Imagenes/Estudiantes_oscuro_Capa\ 1.svg);
+    --icon-toggle-estudiante: url(Imagenes/Estudiantes_oscuro_Capa\ 1.svg);
 }
 
 .estudiante_figure, .estudiante_toggel{
@@ -450,4 +450,5 @@ header .container:has(.nav_input:checked){
     header .container{
         flex-direction: row;
     }
+
 }
