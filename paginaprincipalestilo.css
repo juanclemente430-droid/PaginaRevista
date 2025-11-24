@@ -249,16 +249,16 @@ header .container:has(.nav_input:checked){
     padding: 20px;
 }
 .carta1:first-child{
-    color: rgb(91, 0, 136);
+    color: rgb(86,255, 76);
 }
 .carta1:nth-child(2){
-    color: rgb(120, 0, 64);
+    color: rgb(86,255, 76)
 }
 .carta1:nth-child(3){
-    color: rgb(0, 121, 107)
+    color: rgb(86,255, 76)
 }
 .carta1:nth-child(4){
-    color:  rgb(91, 0, 136);
+    color:  rgb(86,255, 76);
 }
 .carta1 .container {
     display: flex;
